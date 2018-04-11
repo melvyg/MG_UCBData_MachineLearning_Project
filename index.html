@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title> Marvel K-Means </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/ bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="navbarColor">
+            <ul class="nav">
+              <li>
+                <a class="navbar-brand" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="js_bubble_bySeries/kmeans_series.html">
+                    Cluster by Series
+                </a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="js_kmeans_force/kmeans_force.html">
+                    Force Directed Bubble Chart
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="js_kmeans_simulation/k-means_viz.html">
+                    Simulation
+                </a>
+              </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <section>
+                    <h1 class="title">Marvel Character K-means Clustering Using Pyspark and NLP</h1>
+                    <img class="titleImg" src="images/marvel_characters.png"/>
+                    <div class="text">
+                        <p>
+                            The goal of this project is to identify marvel characters with the largest comic influence or social status--use k-means clustering define and visualize different marvel universes and the connections between these universes. To achieve this, I use natural language processing on the comics, series, and event text provided by the developer Marvel API for each marvel character. Furthermore, I aim to create  interactive D3.js visualizations to illustrate how k-means is implemented and how the marvel character clusters are defined. Also, for fun a force-directed bubble chart with bubbles scaled to the number of comics a character is a part to idenity the most popular marvel characters.
+                        </p>
+                    </div>
+                </section>
+            </div>
+            <div class="col-md-4">
+                <section>
+                    <h2 class="title">D3.js Visualizations</h2>
+                    <div>
+                        <a href="js_bubble_bySeries/kmeans_series.html"><img class="vizbarimages" src="images/cluster_series.png"/></a>
+                    </div>
+                    <div>
+                        <a href="js_kmeans_force/kmeans_force.html"><img class="vizbarimages" src="images/bubble_chart.png"/></a>
+                    </div>
+                    <div>
+                        <a href="js_kmeans_simulation/k-means_viz.html"><img class="vizbarimages" src="images/kmeans_simulation.png"/></a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Kmeans by Series</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/ bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../style.css">
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+	</head>
+	<body>
+        <nav class="navbar navbar-dark bg-primary">
+                <div class="navbarColor">
+                    <ul class="nav">
+                        <li>
+                        <a class="navbar-brand" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                        <a class="nav-link" href="../js_bubble_bySeries/kmeans_series.html">
+                            Cluster by Series<span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="../js_kmeans_force/kmeans_force.html">
+                            Force Directed Bubble Chart
+                        </a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="../js_kmeans_simulation/k-means_viz.html">
+                            Simulation
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        <h2 style="margin-left:160px;">K-Means Clustering by NLP of Series Text Titles</h2>
+        <div class="chart" style="margin-left:100px;"></div>
+
+		<script type="text/javascript" src="app.js"></script>
+  </body>
+</html>

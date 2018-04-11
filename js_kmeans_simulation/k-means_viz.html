@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title> Kmeans Visualization </title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/ bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css">
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+    <script type="text/javascript" src="k-means.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-primary">
+            <div class="navbarColor">
+                <ul class="nav">
+                    <li>
+                    <a class="navbar-brand" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="../js_bubble_bySeries/kmeans_series.html">
+                        Cluster by Series
+                    </a>
+                </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="../js_kmeans_force/kmeans_force.html">
+                        Force Directed Bubble Chart
+                    </a>
+                    </li>
+                    <li class="nav-item active">
+                    <a class="nav-link" href="../js_kmeans_simulation/k-means_viz.html">
+                        Simulation<span class="sr-only">(current)</span>
+                    </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    <h2 class = "page_title" style="margin-left:200px;">Visualizing the K-Means Clustering Algorithm on Marvel Characters</h2>
+    <div id="kmeans" style="margin-left:200px ;margin-top:30px;">
+        <div><svg version="1.1" width="5px" height="5px" viewBox="-450 -50 900 100">
+        </svg></div>
+        <div><button id="step">Step</button> <button id="restart" disabled>Restart</button></div>
+        <fieldset style="display: inline; margin: .8em 0 1em 0; border: 1px solid #999; padding: .5em">
+        <div><label for="N">N (the number of node):</label><input type="number" id="N" min="2" max="1000" value="400"></div>
+        <div><label for="K">K (the number of cluster):</label><input type="number" id="K" min="2" max="50" value="7"></div>
+        <div><button id="reset">New</button></div>
+        </fieldset>
+    </div>
+    <div id="tooltip2"></div> 
+
+</body>
+</html>
